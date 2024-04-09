@@ -1,7 +1,7 @@
 'use client';
 import styles from './Table.module.css';
 import { data } from '../../mockData';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Graph from '../Graph/Graph';
 import cn from 'classnames';
 
@@ -23,8 +23,8 @@ export default function Table() {
         </tr>
         {data.length &&
           data.map((el) => (
-            <>
-              <tr key={el.id} onClick={() => setActiveGraph(el.id)}>
+            <React.Fragment key={el.id}>
+              <tr onClick={() => setActiveGraph(el.id)}>
                 <td className={styles.cell}>{el.title} руб.</td>
                 <td className={`${styles.cell} ${styles.bgBlue}`}>{el.thisDay}</td>
                 <td
@@ -66,7 +66,7 @@ export default function Table() {
               ) : (
                 ''
               )}
-            </>
+            </React.Fragment>
           ))}
       </tbody>
     </table>
