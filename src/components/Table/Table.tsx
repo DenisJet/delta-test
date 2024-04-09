@@ -41,7 +41,14 @@ export default function Table() {
                   {percents(el.thisDay, el.yesterday)}%
                 </span>
               </td>
-              <td className={styles.cell}>{el.thisDayWeek}</td>
+              <td
+                className={cn(styles.cell, {
+                  [styles.bgRed]: el.thisDayWeek > el.thisDay,
+                  [styles.bgGreen]: el.thisDayWeek < el.thisDay,
+                })}
+              >
+                {el.thisDayWeek}
+              </td>
             </tr>
             {el.id === activeGraph ? (
               <tr>
