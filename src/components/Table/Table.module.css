@@ -1,0 +1,83 @@
+.table {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.head {
+  font-weight: 400;
+  padding: 10px;
+  background: rgb(243, 243, 243);
+}
+
+.head:first-child {
+  width: 300px;
+}
+
+.head:nth-child(2) {
+  width: 150px;
+}
+
+.head:nth-child(3) {
+  width: 150px;
+}
+
+.head:nth-child(4) {
+  width: 200px;
+}
+
+.cell {
+  font-weight: 400;
+  padding: 10px;
+  background: rgb(243, 243, 243);
+  cursor: pointer;
+}
+
+.cell:first-child {
+  width: 300px;
+}
+
+.cell:nth-child(2) {
+  width: 150px;
+  text-align: end;
+}
+
+.cell:nth-child(3) {
+  width: 150px;
+  text-align: end;
+}
+
+.cell:nth-child(4) {
+  width: 200px;
+  text-align: end;
+}
+
+.percents {
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.bgBlue {
+  background: rgb(217, 234, 247);
+}
+
+.bgRed {
+  background: rgb(253, 191, 191);
+}
+
+.bgGreen {
+  background: rgb(187, 245, 187);
+}
+
+.colorGreen {
+  color: rgb(19, 146, 19);
+}
+
+.colorRed {
+  color: rgb(209, 22, 22);
+}
